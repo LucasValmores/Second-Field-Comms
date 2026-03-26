@@ -18,7 +18,6 @@ async fn handleclient(mut stream: TcpStream){
 #[tokio::main]
 async fn main() {
     let listen = TcpListener::bind("127.0.0.1:8080").await.expect("address not bound");
-  //obviously self hosting
     println!("server listening on port 8080");
 
 loop{
